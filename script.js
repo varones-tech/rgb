@@ -6,9 +6,7 @@ function onLoad() {
     .addEventListener('change', handleRangeChange);
 
   handleRangeChange();
-}
 
-function onLoad() {
   document
     .addEventListener('change', handleRangeChange);
 
