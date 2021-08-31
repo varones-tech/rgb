@@ -5,9 +5,8 @@ function onLoad() {
     .querySelector('#inputRed')
     .addEventListener('change', handleRangeChange);
 
-  handleRangeChange();
-
   document
+    .querySelector('#inputBlue')
     .addEventListener('change', handleRangeChange);
 
   handleRangeChange();
