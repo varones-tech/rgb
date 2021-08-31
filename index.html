@@ -1,33 +1,60 @@
-<!--ola meu nome eh paulo-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RGB Mixer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" lang="js"></script>
   </head>
   <body>
-    <table>
-      <tr>
-        <td>
-          <label for="inputRed">(R) Red: </label>
-        </td>
-        <td>
+
+    <nav>
+      <ul id='colors'>
+        <li for="inputRed">
+          (R) Vermelho:
+        </li>
+        <li>
           <input type="range" id="inputRed" step="1" max="255" />
-        </td>
-        <td>
           <input
             type="text"
             id="inputRedValue"
             class="inputColorCode"
             disabled
           />
-        </td>
-      </tr>
-    </table>
-
-    <div id="divColorResult" class="divColorResult"></div>
+        </li>
+        <li for='inputGreen'>
+          (G) Verde:
+        </li>
+        <li>
+          <input type="range" id="inputGreen" step="1" max="255" />
+          <input
+            type="text"
+            id="inputGreenValue"
+            class="inputColorCode"
+            disabled
+          />
+        </li for='inputBlue'>
+        <li>
+          (B) Azul:  
+        </li>
+        <li>
+          <input type="range" id="inputBlue" step="1" max="255" />
+          <input
+            type="text"
+            id="inputBlueValue"
+            class="inputColorCode"
+            disabled
+          />
+        </li>
+      </ul>
+    </nav>
+    <div id="divColorResult" class="divColorResult"></div> 
+    <footer>
+    <h1>Créditos: Equipe Varones-Tech</h1>
+    </footer>
   </body>
 </html>

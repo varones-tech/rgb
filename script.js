@@ -4,6 +4,19 @@ function onLoad() {
   document
     .querySelector('#inputRed')
     .addEventListener('change', handleRangeChange);
+    
+
+  handleRangeChange();
+
+  document
+  .querySelector('#inputGreen')
+    .addEventListener('change', handleRangeChange);
+
+  handleRangeChange();
+
+  document
+  .querySelector('#inputBlue')
+    .addEventListener('change', handleRangeChange);
 
   handleRangeChange();
 }
@@ -11,10 +24,12 @@ function onLoad() {
 function handleRangeChange() {
   var divResult = document.querySelector('#divColorResult');
   var rCode = document.querySelector('#inputRed').value;
-  var gCode = 0;
-  var bCode = 0;
+  var gCode = document.querySelector('#inputGreen').value;
+  var bCode = document.querySelector('#inputBlue').value;
 
   document.querySelector('#inputRedValue').value = rCode;
+  document.querySelector('#inputGreenValue').value = gCode;
+  document.querySelector('#inputBlueValue').value = bCode;
 
   divResult.style = `background-color: rgb(${rCode},${gCode},${bCode})`;
 }
