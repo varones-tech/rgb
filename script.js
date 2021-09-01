@@ -5,21 +5,18 @@ function onLoad() {
     .querySelector('#inputRed')
     .addEventListener('change', handleRangeChange);
     
-
-  handleRangeChange();
-
-  document
+   document
   .querySelector('#inputGreen')
     .addEventListener('change', handleRangeChange);
 
-  handleRangeChange();
-
-  document
+   document
   .querySelector('#inputBlue')
     .addEventListener('change', handleRangeChange);
-
+  console.log("voce executo o programa kkkkkkkkkkkkkk");
   handleRangeChange();
 }
+
+var rCodeBefore = 0;
 
 function handleRangeChange() {
   var divResult = document.querySelector('#divColorResult');
@@ -31,5 +28,14 @@ function handleRangeChange() {
   document.querySelector('#inputGreenValue').value = gCode;
   document.querySelector('#inputBlueValue').value = bCode;
 
+  if (rCode != rCodeBefore && rCode == 100) {
+    alert("easter egg desimaginativo");
+    rCodeBefore = rCode;
+  }
+  if (rCode != 100) {
+    rCodeBefore = 0;
+  }
+
   divResult.style = `background-color: rgb(${rCode},${gCode},${bCode})`;
 }
+
