@@ -12,12 +12,12 @@
   </head>
   <body>
 
-    <nav>
-      <ul id='colors'>
-        <li for="inputRed">
+    <table>
+      <tr id='colors'>
+        <td for="inputRed">
           (R) Vermelho:
-        </li>
-        <li>
+        </td>
+        <td>
           <input type="range" id="inputRed" step="1" max="255" />
           <input
             type="text"
@@ -25,11 +25,11 @@
             class="inputColorCode"
             disabled
           />
-        </li>
-        <li for='inputGreen'>
+        </td>
+        <td for='inputGreen'>
           (G) Verde:
-        </li>
-        <li>
+        </td>
+        <td>
           <input type="range" id="inputGreen" step="1" max="255" />
           <input
             type="text"
@@ -37,11 +37,11 @@
             class="inputColorCode"
             disabled
           />
-        </li for='inputBlue'>
-        <li>
+        </td for='inputBlue'>
+        <td>
           (B) Azul:  
-        </li>
-        <li>
+        </td>
+        <td>
           <input type="range" id="inputBlue" step="1" max="255" />
           <input
             type="text"
@@ -49,9 +49,9 @@
             class="inputColorCode"
             disabled
           />
-        </li>
-      </ul>
-    </nav>
+        </td>
+      </tr>
+    </table>
     <div id="divColorResult" class="divColorResult"></div> 
     <footer>
     <h1>Créditos: Equipe Varones-Tech</h1>

@@ -38,4 +38,3 @@ function handleRangeChange() {
 
   divResult.style = `background-color: rgb(${rCode},${gCode},${bCode})`;
 }
-
